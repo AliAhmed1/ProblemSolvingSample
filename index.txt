@@ -1,0 +1,1184 @@
+
+// function seregateZeroOne(arr) {
+//     let arr0 = [], arr1 = []
+//     let j = 0
+//     let k = 0
+
+//     for (var i in arr) {
+//         if (arr[i] == 0){
+//             arr0[j] = arr[i]
+//             j++
+//         }
+//         else {
+//             arr1[k] = arr[i]
+//             k++
+//         }
+//     }
+
+//     return [...arr0, ...arr1]
+// }
+
+// function seregateZeroOne(arr) {
+
+//     let type0 = 0;
+//     let type1 = arr.length - 1;
+
+//     while (type0 < type1)
+//     {
+//         if (arr[type0] == 1)
+//         {
+//              if (arr[type1] != 1)
+//             {  
+//               // Swap
+//               arr[type1] = arr[type1] + arr[type0];
+//               arr[type0] = arr[type1] - arr[type0];
+//               arr[type1] = arr[type1] - arr[type0];
+//              }
+//             type1--;
+//         }
+//         else
+//             type0++;
+//     }
+
+//     return arr
+
+// }
+
+
+// console.log(seregateZeroOne([0, 0, 1, 0, 1,0]))
+
+// console.log([1,0,1,0,1,0].sort((a,b)=> a - b))
+
+
+
+// sum without arthmetic operator
+
+// function sumUnary(a,b){
+
+//     let c = a
+//     for(var i = 1 ; i <=b ; i++){
+//         c++;
+//     }
+
+//     return c;
+
+// }
+
+// console.log(sumUnary(120,24))
+
+
+// // // // var val = 5
+// // // // var val2 = 4
+
+// // // // // function to calculate the sum of two numbers
+// // // // function sum(a, b) {
+// // // //     return a + b
+// // // // }
+
+// // // // // function to calculate the difference of two numbers
+// // // // function diff(a, b) {
+// // // //     return a - b
+// // // // }
+
+// // // // // function for calculator to perform the operation
+// // function calculator(a, b, operation) {
+// //     return operation(a, b)
+// // }
+// // console.log(calculator(5, 4, sum))
+
+
+// // // // // function to reverse the string
+// // // // function reverse(str) {
+// // // //     var str1 = ""
+// // // //     for (var i = str.igth - 1; i >= 0; i--) {
+// // // //         str1 += str[i]
+// // // //     }
+// // // //     return str1
+// // // // }
+
+// // function to reverse a number
+// // function reverseNum(num) {
+// //     var num1 = 0
+// //     while (num > 0) {
+// //         num1 = num1 * 10 + num % 10
+// //         num = parseInt(num / 10)
+
+// //         console.log(num1)
+// //     }
+// //     return num1
+// // }
+
+// // console.log(reverseNum(3075))
+
+
+// // // // // function to check if the number is prime or not
+// // // // function isPrime(num) {
+// // // //     for (var i = 2; i < num; i++) {
+// // // //         if (num % i == 0) {
+// // // //             return false
+// // // //         }
+// // // //     }
+// // // //     return true
+// // // // }
+
+// // // // // function to check if the number is palindrome or not without using reverse function
+// // // // function isPalindrome2(num) {
+// // // //     var num1 = num
+// // // //     var num2 = 0
+// // // //     while (num > 0) {
+// // // //         num2 = num2 * 10 + num % 10
+// // // //         num = parseInt(num / 10)
+// // // //     }
+// // // //     return num1 == num2
+// // // // }
+
+// // // // // function recursively to check if the number is palindrome or not
+// // // // function isPalindrome(num) {
+// // // //     if (num < 10) {
+// // // //         return true
+// // // //     }
+// // // //     else if (num % 10 == 0) {
+// // // //         return false
+// // // //     }
+// // // //     else {
+// // // //         return isPalindrome(parseInt(num / 10) * 10 + num % 10)
+// // // //     }
+// // // // }
+
+// // // //function to check if string is palindrome using recursion
+// // // // function isPalindrome(str) {
+// // // //     if (str.length == 1) {
+// // // //         return true
+// // // //     }
+// // // //     else if (str.length == 2) {
+// // // //         return str[0] == str[1]
+// // // //     }
+// // // //     else {
+// // // //         if (str[0] == str[str.length - 1]) {
+// // // //             return isPalindrome(str.slice(1, str.length - 1))
+// // // //         }
+// // // //         else {
+// // // //             return false
+// // // //         }
+// // // //     }
+// // // // }
+
+
+// // // // //function to check if the number is armstrong or not
+// // // // function isArmstrong(num) {
+// // // //     var sum = 0
+// // // //     var temp = num
+// // // //     while (num > 0) {
+// // // //         sum = sum + Math.pow(num % 10, 3)
+// // // //         num = parseInt(num / 10)
+// // // //     }
+// // // //     return sum == temp
+// // // // }
+
+// // // // // array to store the prime numbers
+// // // // var prime = []  // empty array
+
+// // // // if (isPrime(val)) {
+// // // //     prime.push(val)
+// // // // }
+// // // // else {
+// // // //     prime.push(val2)
+// // // // }
+
+
+// // // // // function to find the factorial of a number
+// // // // function factorial(num) {
+// // // //     if (num == 0) {
+// // // //         return 1
+// // // //     }
+// // // //     else {
+// // // //         return num * factorial(num - 1)
+// // // //     }
+// // // // }
+
+// // // // // function to find the fibonacci series
+// // // // function fibonacci(num) {
+// // // //     if (num == 0) {
+// // // //         return 0
+// // // //     }
+// // // //     else if (num == 1) {
+// // // //         return 1
+// // // //     }
+// // // //     else {
+// // // //         return fibonacci(num - 1) + fibonacci(num - 2)
+// // // //     }
+// // // // }
+
+// // // // // console.log(fibonacci(3))
+
+// // // function to create a fibonacci series
+// // function fibonacciSeries(num) {
+// //     var fib = []
+// //     for (var i = 0; i < num; i++) {
+// //         fib.push(fibonacci(i))
+// //     }
+// //     return fib
+// // }
+
+// // // console.log(fibonacciSeries(10))
+
+
+// // // // // function to swap 2 numbers without using third variable
+// // // // function swap(a, b) {
+// // // //     a = a + b
+// // // //     b = a - b
+// // // //     a = a - b
+// // // //     return [a, b]
+// // // // }
+
+// // // // // console.log(swap(10,20))
+
+// // // // // function loop to print fibonacii series
+// // // // function fibonacciLoop(num) {
+// // // //     var fib = []
+// // // //     var a = 0
+// // // //     var b = 1
+// // // //     for (var i = 0; i < num; i++) {
+// // // //         fib.push(a)
+// // // //         [a, b] = [b, a + b]
+// // // //     }
+// // // //     return fib
+// // // // }
+
+
+// // // // // function to find the factorial of a number
+// // // // function factorial(num) {
+// // // //     if (num == 0) {
+// // // //         return 1
+// // // //     }
+// // // //     else {
+// // // //         return num * factorial(num - 1)
+// // // //     }
+// // // // }
+
+// // // // // function to find the fibonacii using recursion
+// // // // function fibonacci(num) {
+// // // //     if (num == 0) {
+// // // //         return 0
+// // // //     }
+// // // //     else if (num == 1) {
+// // // //         return 1
+// // // //     }
+// // // //     else {
+// // // //         return fibonacci(num - 1) + fibonacci(num - 2)
+// // // //     }
+// // // // }
+
+// // // // //function to find largest series of array from more than one array using recursion
+// // // // function largestSeries(arr) {
+// // // //     if (arr.igth == 1) {
+// // // //         return arr[0]
+// // // //     }
+// // // //     else {
+// // // //         var max = largestSeries(arr.slice(1))
+// // // //         return arr[0] > max ? arr[0] : max
+// // // //     }
+// // // // }
+
+
+// // // // function OtherFunction(val, callback) {
+// // // //     callback(val * 5);
+// // // // }
+
+// // // // function getValue() {
+// // // //     let json = {
+// // // //         a: 5,
+// // // //     }
+
+// // // //     OtherFunction(6, function (valuep) {
+// // // //         json.a += valuep
+// // // //     });
+
+// // // //     return json
+// // // // }
+
+// // // // // console.log(getValue())
+
+
+
+// // function recursion(n) {
+
+// //     let i = 0
+// //     if (n.igth < i) {
+// //         if (n[i] > n[i + 1]) {
+// //             let newNum = n.splice(i, i + 1)
+
+// //             i++
+// //             // console.log(n)
+
+// //             return recursion(newNum)
+// //         }
+// //         else {
+// //             return recursion(n)
+// //         }
+// //     }
+// // }
+
+// // let A = [10, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// // let answer = recursion(A)
+
+// // // console.log(answer)
+
+
+
+// // // // // function to create series of highest number from more than one array using recursion
+// // // // function largestSeries(arr) {
+// // // //     if (arr.igth == 1) {
+// // // //         return arr[0]
+// // // //     }
+// // // //     else {
+// // // //         var max = largestSeries(arr.slice(1))
+// // // //         return arr[0] > max ? arr[0] : max
+// // // //     }
+// // // // }
+
+// // // // // console.log(largestSeries([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+
+
+// // // // // function to sort the array using recursion
+// // // // function sort(arr) {
+// // // //     if (arr.igth == 1) {
+// // // //         return arr
+// // // //     }
+// // // //     else {
+// // // //         var max = largestSeries(arr.slice(1))
+// // // //         return sort(arr.filter(function (val) {
+// // // //             return val != max
+// // // //         }))
+// // // //     }
+// // // // }
+
+// // // // // console.log(sort([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+
+// // // // // function to sort the array in ascending order using recursion
+// // // // function sortAscending(arr) {
+// // // //     if (arr.igth == 1) {
+// // // //         return arr
+// // // //     }
+// // // //     else {
+// // // //         var max = largestSeries(arr.slice(1))
+// // // //         return sortAscending(arr.filter(function (val) {
+// // // //             return val != max
+// // // //         }))
+// // // //     }
+// // // // }
+
+// // // // // console.log(sortAscending([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+
+
+
+// // // // function arrSeries(arr, i = 0) {
+
+// // // //     var newArr = []
+// // // //     if (i < arr.igth) {
+// // // //         if (arr.igth == 0) {
+// // // //             return 0
+// // // //         }
+
+// // // //         else if (arr.igth == 1) {
+// // // //             return arr[0]
+// // // //         }
+// // // //         else if (arr[i] > arr[i + 1]) {
+// // // //             let newNum = arr.splice(i, i + 1)
+// // // //             newArr.push(newNum)
+// // // //             return arrSeries(arr, i + 1, newArr)
+// // // //         }
+// // // //         else {
+// // // //             newArr.push(arr[i])
+// // // //             return arrSeries(arr, i + 1, newArr)
+// // // //         }
+// // // //     }
+// // // //     else{
+// // // //         return;
+// // // //     }
+// // // // }
+
+// // // // // console.log(arrSeries([1, 2, 3, 5, 8, 7, 6, 10, 1, 0]))
+
+// // // // // function to eliminate the duplicate values from an array using recursion
+
+
+// // function recursion(n, i = 0, subset = false) {
+// //     if (i < n.length) {
+// //         if (subset == true) {
+// //             n.splice(i, 1);
+// //             i--;
+// //         }
+// //         return recursion(n, i + 1, n[i] > n[i + 1])
+// //     }
+// // }
+
+// // let array = [1, 4, 2, 5, 3, 7, 6, 10, 8]
+// // recursion(array)
+
+// // console.log(array);
+
+// // // // SELECT *
+// // // // FROM Employee Emp1
+// // // // WHERE (N-1) = (
+// // // // SELECT COUNT(DISTINCT(Emp2.Salary))
+// // // // FROM Employee Emp2
+// // // // WHERE Emp2.Salary > Emp1.Salary)
+
+
+// // // // DECLARE @string NVARCHAR(255);
+// // // // SET @string = 'szaaa';
+
+// // // // SELECT CASE WHEN @string=REVERSE(@string)THEN 'Is palindrome'
+// // // //             ELSE 'Is not palindrome'
+// // // //             END
+
+
+// // // // function to find second largest number in an array using recursion
+// // // function secondLargest(arr) {
+// // //     if (arr.length == 1) {
+// // //         return 0
+// // //     }
+// // //     else if (arr.length == 2) {
+// // //         return arr[0]
+// // //     }
+// // //     else {
+// // //         var max = secondLargest(arr.slice(1))
+// // //         return arr[0] > max ? arr[0] : max
+// // //     }
+// // // }
+
+
+// //find the second largest number in an array using for loop
+// function secondLargestFor(arr) {
+//     var max = arr[0]
+//     var secondMax = 0
+//     for (var i = 1; i < arr.length; i++) {
+//         if (arr[i] > max) {
+//             secondMax = max
+//             max = arr[i]
+//         }
+//         else if (arr[i] > secondMax && arr[i] < max) {
+//             secondMax = arr[i]
+//         }
+//     }
+//     return secondMax
+// }
+
+// console.log(secondLargestFor([2,4,6,3]))
+
+// // // //find the nth largest number in an array using for loop
+// // // function nthLargestFor(arr, n) {
+// // //     var max = arr[0]
+// // //     var count = 0
+// // //     for (var i = 1; i < arr.length; i++) {
+// // //         if (arr[i] > max) {
+// // //             max = arr[i]
+// // //             count++
+// // //         }
+// // //     }
+// // //     return count == n ? max : nthLargestFor(arr.filter(function (val) {
+// // //         return val != max
+// // //     }), n)
+// // // }
+
+// // // let arr = [1, 4, 2, 5, 3, 7, 6, 10, 8]
+// // // let n = 2
+
+// // // console.log(nthLargestFor(arr, n))
+
+
+// // // // function to find the nth largest number in an array using recursion
+// // // function nthLargest(arr, n) {
+// // //     if (arr.length == 1) {
+// // //         return 0
+// // //     }
+// // //     else if (arr.length == 2) {
+// // //         return arr[0]
+// // //     }
+// // //     else {
+// // //         var max = nthLargest(arr.slice(1), n)
+// // //         return arr[0] > max ? arr[0] : max
+// // //     }
+// // // }
+
+
+// // // // function to find palindrome using recursion
+// // // function palindrome(str) {
+// // //     if (str.length == 1) {
+// // //         return true
+// // //     }
+// // //     else if (str.length == 2) {
+// // //         return str[0] == str[1]
+// // //     }
+// // //     else {
+// // //         return str[0] == str[str.length - 1] && palindrome(str.slice(1, -1))
+// // //     }
+// // // }
+
+// // // console.log(palindrome('ss'))
+
+
+
+// // for(let i = 0; i < 3; i++){
+// //     const log = () => {
+// //         console.log(i)
+// //     }
+// //     setTimeout(log,100)
+// // }
+
+// // const arr = ['a',b,c]
+// // const [, a,] = arr;
+// // console.log(a);
+
+// // // const arr = [1]
+// // // const arr2 = [1]
+
+// // // console.log(JSON.stringify(arr) == JSON.stringify(arr2))
+
+
+// // // const person = {a : 2 , name : 'a'};
+// // // const pa = [person,person,person];
+// // // pa[1].name= 'b';
+// // // console.log(pa);
+
+
+// // // function to find min max sum of an array
+// // // function minMaxSum(arr) {
+// // //     var min = arr[0]
+// // //     var max = arr[0]
+// // //     var sum = 0
+// // //     for (var i = 0; i < arr.length; i++) {
+// // //         if (arr[i] < min) {
+// // //             min = arr[i]
+// // //         }
+// // //         else if (arr[i] > max) {
+// // //             max = arr[i]
+// // //         }
+// // //         sum += arr[i]
+// // //     }
+// // //     return [min, max, sum]
+// // // }
+
+// // // console.log(minMaxSum([1, 2, 3, 4, 5]))
+
+
+// // // function to make 2d array
+// // function make2DArray(rows, cols) {
+// //     var arr = new Array(rows);
+// //     for (var i = 0; i < rows; i++) {
+// //         arr[i] = new Array(cols);
+// //     }
+// //     return arr;
+// // }
+
+// // console.log(make2DArray(2, 2));
+
+
+// // searching pairs in an array
+// function searchPairs(arr, sum) {
+//     var pairs = []
+//     for (var i = 0; i < arr.length; i++) {
+//         for (var j = i + 1; j < arr.length; j++) {
+//             if (arr[i] + arr[j] == sum) {
+//                 pairs.push([arr[i], arr[j]])
+//             }
+//         }
+//     }
+//     return pairs
+// }
+
+// // console.log(searchPairs([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 10))
+
+
+// // // Return the number of pairs with equal
+// // // values.
+// // function countPairs(arr, n) {
+// //     let ans = 0;
+
+// //     // for each index i and j
+// //     for (let i = 0; i < n; i++)
+// //         for (let j = i + 1; j < n; j++)
+
+// //             // finding the index with same
+// //             // value but different index.
+// //             if (arr[i] == arr[j])
+// //                 ans++;
+// //     return ans;
+// // }
+
+// // console.log(countPairs([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 10))
+
+
+// // // Function to find the element
+// // // occurring odd number of times
+// // function getOddOccurrence(arr, arr_size) {
+// //     for (let i = 0; i < arr_size; i++) {
+
+// //         let count = 0;
+
+// //         for (let j = 0; j < arr_size; j++) {
+// //             if (arr[i] == arr[j])
+// //                 count++;
+// //         }
+// //         if (count % 3 == 0)
+// //             return arr[i];
+// //     }
+// //     return -1;
+// // }
+
+// // // console.log(getOddOccurrence([1, 5, 3, 5, 5, 6, 7, 8, 9, 10], 10))
+
+
+// // function mostFrequent(arr, n) {
+
+// //     // Sort the array
+// //     arr.sort();
+
+// //     // find the max frequency using linear
+// //     // traversal
+// //     let maxCount = 1, value = arr[0];
+// //     let currCount = 1;
+
+// //     for (let i = 1; i < n; i++) {
+// //         if (arr[i] == arr[i - 1])
+// //             currCount++;
+// //         else
+// //             currCount = 1;
+
+// //         if (currCount > maxCount) {
+// //             maxCount = currCount;
+// //             value = arr[i - 1];
+// //         }
+
+// //     }
+
+// //     return value;
+// // }
+
+// // console.log(mostFrequent([1, 2, 3, 2, 5, 5, 7, 8, 9, 10], 10))
+
+
+// // // grid search
+// // // function gridSearch(G, P) {
+// // //     var m = G.length, n = G[0].length, i, j;
+// // //     for (i = 0; i <= m - P.length; i++) {
+// // //         for (j = 0; j <= n - P[0].length; j++) {
+// // //             if (G[i][j] == P[0][0]) {
+// // //                 if (check(G, i, j, P))
+// // //                     return true;
+// // //             }
+// // //         }
+// // //     }
+// // //     return false;
+// // // }
+
+// // // console.log(gridSearch([1], [1]))
+
+
+// function migratoryBirds(arr) {
+//     // Write your code here
+
+//     let checkArr = []
+
+//     for (var i = 0; i < arr.length; i++) {
+//         for (var j = i + 1; j < arr.length; j++) {
+//             if (arr[i] == arr[j]) {
+//                 checkArr.push(arr[i])
+//             }
+//         }
+//     }
+
+
+//     const min = Math.min(...checkArr)
+
+//     return min;
+// }
+
+// // console.log(migratoryBirds([1, 2, 3, 4, 4, 3, 2, 1, 3, 4]));
+
+
+
+// // function utopianTree(n) {
+// //     // Write your code here
+
+// //     // var height;
+// //     let lines = n;
+
+// //     for (var i = 1; i < lines.length; i++) {
+// //         if (lines[i].length > 0) {
+// //             var height = 1;
+// //             for (var j = 0; j < lines[i]; j++) {
+// //                 if (j % 2 == 0) {
+// //                     height *= 2;
+// //                 } else {
+// //                     height++
+// //                 }
+// //             }
+// //             console.log(height);
+// //             height = 0;
+// //         }
+// //     }
+
+// // }
+
+// // utopianTree([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+// // function staircase(n) {
+// //     // Write your code here
+
+// //     let steps = n;
+
+// //     for (var i = 0; i++ < steps;) {
+
+// //         var line = '';
+// //         var spaces = steps - i;
+
+// //         for (var j = spaces; j--;) {
+// //             line += ' ';
+// //         }
+
+// //         for (var j = i; j--;) {
+// //             line += '#';
+// //         }
+
+// //         console.log(line);
+// //     }
+// // }
+
+// // staircase(3)
+
+// // make sets of array
+// // function makeSets(arr) {
+// //     let sets = []
+// //     for (var i = 0; i < arr.length; i++) {
+// //         let set = new Set()
+// //         for (var j = 0; j < arr[i].length; j++) {
+// //             set.add(arr[i][j])
+// //         }
+// //         sets.push(set)
+// //     }
+// //     return sets
+// // }
+
+// // console.log(makeSets([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
+
+// //team formation
+// // function teamFormation(arr) {
+// //     let sets = []
+// //     for (var i = 0; i < arr.length; i++) {
+// //         let set = new Set()
+// //         for (var j = 0; j < arr[i].length; j++) {
+// //             set.add(arr[i][j])
+// //         }
+// //         sets.push(set)
+// //     }
+// //     return sets
+// // }
+
+// // console.log(teamFormation([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
+
+// // function cartesian(...args) {
+// //     var r = [], max = args.length - 1;
+// //     function helper(arr, i) {
+// //         for (var j = 0, l = args[i].length; j < l; j++) {
+// //             var a = arr.slice(0); // clone arr
+// //             a.push(args[i][j]);
+// //             if (i == max)
+// //                 r.push(a);
+// //             else
+// //                 helper(a, i + 1);
+// //         }
+// //     }
+// //     helper([], 0);
+// //     return r;
+// // }
+
+// // console.log(cartesian([1, 2, 3], [4, 5, 6], [7, 8, 9]))
+
+
+
+// //pascal triangle
+// function pascalTriangle(n) {
+//     // Write your code here
+//     let triangle = [];
+//     for (var i = 0; i < n; i++) {
+//         triangle[i] = [];
+//         for (var j = 0; j <= i; j++) {
+//             if (j == 0 || j == i) {
+//                 triangle[i][j] = 1;
+//             } else {
+//                 triangle[i][j] = triangle[i - 1][j - 1] + triangle[i - 1][j];
+//             }
+//         }
+//     }
+//     return triangle;
+// }
+
+// let arr = pascalTriangle(6);
+// // arr.map((val) => { console.log(val.join(' ')) })
+
+
+
+
+// //intersect of array
+// // function intersect(arr1, arr2) {
+// //     return filteredArray = arr1.filter(value => arr2.includes(value));
+// // }
+
+// // console.log(intersect([1, 2, 3, 4, 5], [2, 4, 6, 8, 10]))
+
+
+// //union of two array
+// // function union(arr1, arr2) {
+// //     return filteredArray = [...new Set([...arr1, ...arr2])];
+// // }
+
+// // console.log(union([1, 2, 3, 4, 5], [2, 4, 6, 8, 10]))
+
+
+// // //merge two array
+// // function merge(arr1, arr2) {
+// //     filteredArray = [...arr1, ...arr2];
+// //     return filteredArray.sort((a, b) => a - b);
+// // }
+
+// // console.log(merge([1, 2, 3, 4, 5], [2, 4, 6, 8, 10]))
+
+
+// // Use to remove duplicate elements from the array
+
+// // const numbers = [2,3,4,4,2,3,3,4,4,5,5,6,6,7,5,32,3,4,5]
+
+// // //spreading numbers of the object into an array using the new operator
+// // console.log([...new Set(numbers)])
+
+// // [2, 3, 4, 5, 6, 7, 32]
+
+// // cartesion
+// const data = [
+//     [1, 2],
+//     [10, 20, 30],
+//     [100, 200, 300],
+// ];
+// const prod = data.reduce(
+//     (a, b) => a.flatMap((x) => b.map((y) => [...x, y])),
+//     [[]]
+// );
+
+// //   console.log(prod)
+
+// //function difference b/w two array
+// function difference(arr1, arr2) {
+//     return arr1.filter(x => !arr2.includes(x))
+// }
+
+// // console.log(difference([1, 2, 3, 4, 5], [2, 4, 6, 8, 10]))
+
+
+// let str = "hello"
+// let str2 = "helloworld"
+
+// let filtered = str2.split("").filter(x => !str.includes(x))
+// // console.log(filtered)
+
+
+// // check if two array are equal
+// // function arraysEqual(arr1, arr2) {
+// //     if (arr1.length !== arr2.length) return false;
+// //     for (var i = arr1.length; i--;) {
+// //         if (arr1[i] !== arr2[i]) return false;
+// //     }
+// //     return true;
+// // }
+
+// //looping through object
+
+// obj = {
+//     name: "John",
+//     age: 30,
+//     city: "New York"
+// }
+
+// for (var key in obj) {
+//     // console.log(key)
+// }
+
+
+// //sub division of array
+// function splitToChunks(array, parts) {
+//     let result = [];
+//     for (let i = parts; i > 0; i--) {
+//         result.push(array.splice(0, Math.ceil(array.length / i)));
+//     }
+//     return result;
+// }
+
+
+// function split(array, n) {
+//     let [...arr] = array;
+//     var res = [];
+//     while (array.length) {
+//         res.push(array.splice(0, n));
+//     }
+//     return res;
+// }
+
+// // console.log(splitToChunks([1, 2, 3, 4, 5], 3))
+
+// console.log(split([1, 2, 3, 4, 5, 6], 1))
+
+// // let sum = s.slice(i, m + i)
+// // .reduce((prev, current) => prev + current)     sub division and sum => return sum
+
+
+// // Array grid search javascript
+// const a = [
+//     0, 1, 2,
+//     3, 4, 5,
+//     6, 7, 8
+// ];
+
+// let x = 0, y = 1;
+// let index = (x * 3) + y;
+// // console.log(`(${x}, ${y}) is index ${index}, value ${a[index]}`);
+
+
+
+// //maximize the array
+// // function maximizeArray(arr) {
+// //     let max = 0;
+// //     for (var i = 0; i < arr.length; i++) {
+// //         for (var j = i + 1; j < arr.length; j++) {
+// //             if (arr[i] + arr[j] > max) {
+// //                 max = arr[i] + arr[j];
+// //             }
+// //         }
+// //     }
+// //     return max;
+// // }
+
+// // subset
+// // formation of team2
+// // minlevel , maxlevel, minplayers, players
+// function getAllSubsets() {
+
+//     let minLvl = 3;
+//     let maxLvl = 7;
+
+//     let array = []
+
+//     let players = [1, 3, 5, 6, 8, 9]
+
+
+//     for (var i in players) {
+//         if (players[i] > minLvl && players[i] < maxLvl) {
+//             array.push(players[i])
+//         }
+//     }
+
+
+//     const subsets = [[]];
+//     var min = 1
+//     for (const j of array) {
+//         const last = subsets.length - 1;
+//         for (let i = 0; i <= last; i++) {
+
+//             subsets.push([...subsets[i], j]);
+
+//         }
+//     }
+
+//     return subsets.splice(1).filter(x => x.length >= min).map((val) => {
+//         return val
+//     })
+
+// }
+
+// console.log(getAllSubsets())
+
+
+
+// // u = arr[1]*arr[2]*(1/arr[3])*ar[4]*(1/arr[5])*arr[6]*(1/arr[7])*arr[8]*(1/arr[9])*arr[10]*(1/arr[11])
+// // maximize the Value
+// // return array of greater product
+
+
+// function sol(arr) {
+//     console.time()
+//     var maxArrange = []
+//     var max = 0
+
+//     let permutation = arr
+//     var length = permutation.length,
+//         result = [permutation.slice()],
+//         c = new Array(length).fill(0),
+//         i = 1, k, p;
+
+//     while (i < length) {
+//         if (c[i] < i) {
+//             k = i % 2 && c[i];
+//             p = permutation[i];
+//             permutation[i] = permutation[k];
+//             permutation[k] = p;
+//             ++c[i];
+//             i = 1;
+//             // console.log(permutation.slice())
+
+//             let arrIn = permutation.slice()
+
+//             var u = 1
+//             for (var j = 0; j < arrIn.length; j++) {
+
+//                 if (j == 0 || j == 1) {
+//                     u *= arrIn[j]
+//                 }
+//                 else if (j % 2 == 0) {
+//                     u *= 1 / arrIn[j]
+//                 }
+
+//                 else {
+//                     u *= arrIn[j]
+//                 }
+//             }
+
+//             if (u > max) {
+//                 max = u
+//                 maxArrange = arrIn
+//             }
+
+//         } else {
+//             c[i] = 0;
+//             ++i;
+//         }
+//     }
+//     console.timeEnd()
+//     return maxArrange
+// }
+
+// console.log(sol([1, 2, 3, 4]))
+
+// // let x
+
+// // let a= {y: 10};
+// // a.x = a;
+// // // console.log(JSON.stringify(a)) // a = { x: { y : 10 } }
+
+
+// // let arr = [1, "t", { x: 2 }, [3, 4]]
+// // delete arr[1]
+// // console.log(arr.length)
+
+
+// // for (var i in arr) {
+
+// //     if (arr[i] == "t") {
+// //         arr.splice(i,1)
+
+// //     }
+
+// //     else{
+// //         console.log(arr[i])
+
+// //     }
+// // }
+
+
+// // try{
+// //     const m=1
+// //     const n = m+z
+// //     console.log(n)
+
+// // }
+// // catch(e){
+// //         console.log(e.name)
+// // }
+
+// // {
+
+// //     console.time("loop")
+// //     for(let i = 0 ; i < 1000000 ; i++)
+// //     {
+
+// //     }
+
+// //     console.timeEnd("loop")
+
+
+// // }\
+
+
+
+// // console.log(1)
+// // setTimeout(() => {
+// //     console.log(2)
+// // }, 0);
+
+// // Promise.resolve(3).then(console.log)
+// // console.log(4)
+
+
+
+// // const array = [1,1];
+
+// // let largestNum = array[0];
+// // let secondLargestNum = 0;
+
+// // for(let i = 1; i < array.length; i++) {
+// // 	if(array[i] > largestNum) {
+// //     secondLargestNum = largestNum;
+// //     largestNum = array[i];
+// //     }
+// //   else if (array[i] !== largestNum && array[i] > secondLargestNum) {
+// //   secondLargestNum = array[i];
+// //   }
+// // };
+// // console.log("Largest Number in the array is " + largestNum);
+// // console.log("Second Largest Number in the array is " + secondLargestNum);
+
+
+// function getTotalX(a, b) {
+//     let isFactor = (a, b) => a % b === 0
+
+//     var results = 0
+//     for (var i = a[a.length - 1]; i <= b[0]; i++) {
+//         if (a.every((x) => isFactor(i, x)) && b.every((x) => isFactor(x, i)))
+//             results++
+//     }
+
+//     return results
+// }
+
+
+// // find the longest subarray where the absolute difference between any two elements is less than or equal to .
+// function pickingNumbers(a) {
+//     // Write your code here
+
+//     let sortedArray = a.sort((a, b) => a - b)
+
+//     let i = 0
+//     let j = 0
+
+//     while (i < sortedArray.length && j < sortedArray.length) {
+//         if (Math.abs(sortedArray[i] - sortedArray[j]) > 1) {
+//             i++
+//             j++
+//         }
+
+//         else {
+//             j++
+//         }
+//     }
+
+//     return Math.abs(i > j ? i - j : j - i)
+
+// }
+
+
+// // console.log(pickingNumbers([1,3,5,6]))
+
+
+
+
+
